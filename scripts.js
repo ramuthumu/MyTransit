@@ -4,7 +4,7 @@ var links= ["https://svc.metrotransit.org/NexTrip/645/2/SHNA?format=json","https
 for (var i in links) {
     var request = new XMLHttpRequest();
     request.open('GET', links[i],true);
-    request.timeout = 2000
+    request.timeout = 4000;
     
 request.onload = function (i) {
     
