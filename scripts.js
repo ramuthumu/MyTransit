@@ -3,7 +3,7 @@ var links= ["https://svc.metrotransit.org/NexTrip/645/2/SHNA?format=json","https
 
 for (var i in links) {
     var request = new XMLHttpRequest();
-    request.open('GET', links[i], false);
+    request.open('GET', links[i]);
     
 request.onload = function (i) {
     
