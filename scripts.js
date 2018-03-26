@@ -17,7 +17,7 @@ request.onload = function (i) {
     var data = JSON.parse(this.response);
     data.forEach(vehicle => {
         // Log each movie's title
-        //if(vehicle.Actual==true){
+        if(vehicle.Actual==true){
         const card = document.createElement('div');
         card.setAttribute('class', 'card');
         const h1 = document.createElement('h3');
@@ -34,7 +34,7 @@ request.onload = function (i) {
         card.appendChild(p);
         card.appendChild(p1);
         card.appendChild(p2)
-        //}
+        }
     });
 } else {
         const errorMessage = document.createElement('h2');
