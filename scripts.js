@@ -37,8 +37,9 @@ request.onload = function (i) {
         }
     });
 } else {
+        var data2 = JSON.parse(this.response);
         const unreal = document.createElement('p');
-        unreal.textContent = ;
+        unreal.textContent = data[i];
         app.appendChild(unreal);
 }
 }
