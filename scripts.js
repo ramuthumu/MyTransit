@@ -37,9 +37,9 @@ request.onload = function (i) {
         }
     });
 } else {
-        const errorMessage = document.createElement('h2');
-        errorMessage.textContent = request.status;
-        app.appendChild(errorMessage);
+        const unreal = document.createElement('p');
+        unreal.textContent = ;
+        app.appendChild(unreal);
 }
 }
     request.send();
